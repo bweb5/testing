@@ -27,17 +27,17 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:60px;
-    margin-bottom:30px;
+    gap:50px;
+    margin-bottom:25px;
 }
 
 .logos img{
-    height:70px;
+    height:55px;
 }
 
 h1{
-    margin-bottom:50px;
     color:#f0f0f0;
+    margin-bottom:45px;
 }
 
 .apps{
@@ -48,17 +48,24 @@ h1{
 
 .app{
     text-decoration:none;
-    transition: transform .2s ease;
+    color:white;
 }
 
-.app:hover{
-    transform:scale(1.08);
+.card{
+    background:#1f2335;
+    padding:30px;
+    border-radius:18px;
+    transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.app img{
-    width:230px;
-    border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.5);
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.card img{
+    width:160px;
+    height:160px;
 }
 
 .label{
@@ -85,12 +92,16 @@ h1{
 <div class="apps">
 
 <a class="app" href="./cost/">
-<img src="./icons/cost.svg" alt="Cost Calculator">
+<div class="card">
+<img src="./icons/cost.svg">
+</div>
 <div class="label">Cost Model</div>
 </a>
 
 <a class="app" href="./warranty/">
-<img src="./icons/warranty.svg" alt="Warranty Calculator">
+<div class="card">
+<img src="./icons/warranty.svg">
+</div>
 <div class="label">Warranty Model</div>
 </a>
 
