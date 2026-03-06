@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PV Warranty Degradation & Cost Recovery Model</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PV Repowering Tools</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#e6e6e6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    margin-bottom:40px;
+    color:#333;
+}
+
+.apps{
+    display:flex;
+    gap:50px;
+    justify-content:center;
+}
+
+.app{
+    text-decoration:none;
+    transition: transform .2s ease;
+}
+
+.app:hover{
+    transform:scale(1.08);
+}
+
+.app img{
+    width:240px;
+    border-radius:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+.label{
+    margin-top:12px;
+    font-weight:600;
+    color:#333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>PV Repowering Tools</h1>
+
+<div class="apps">
+
+<a class="app" href="./cost/">
+<img src="./icons/cost.svg" alt="Cost Calculator">
+<div class="label">Cost Model</div>
+</a>
+
+<a class="app" href="./warranty/">
+<img src="./icons/warranty.svg" alt="Warranty Calculator">
+<div class="label">Warranty Model</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
 </html>
