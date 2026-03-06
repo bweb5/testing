@@ -12,7 +12,7 @@
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-   background:#2f2f2fa9;
+    background:#3a3a3a;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -23,14 +23,26 @@ body{
     text-align:center;
 }
 
+.logos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    margin-bottom:30px;
+}
+
+.logos img{
+    height:70px;
+}
+
 h1{
-    margin-bottom:40px;
-    color:#333;
+    margin-bottom:50px;
+    color:#f0f0f0;
 }
 
 .apps{
     display:flex;
-    gap:50px;
+    gap:60px;
     justify-content:center;
 }
 
@@ -44,15 +56,15 @@ h1{
 }
 
 .app img{
-    width:240px;
+    width:230px;
     border-radius:20px;
-    box-shadow:0 8px 18px rgba(0,0,0,.2);
+    box-shadow:0 10px 20px rgba(0,0,0,.5);
 }
 
 .label{
     margin-top:12px;
     font-weight:600;
-    color:#333;
+    color:#e0e0e0;
 }
 
 </style>
@@ -62,6 +74,11 @@ h1{
 <body>
 
 <div class="container">
+
+<div class="logos">
+<img src="./images/nrel.png" alt="NREL Logo">
+<img src="./images/unm-ece.png" alt="UNM ECE Logo">
+</div>
 
 <h1>PV Repowering Tools</h1>
 
