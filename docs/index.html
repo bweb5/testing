@@ -12,74 +12,69 @@
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-
-    background: linear-gradient(
-        135deg,
-        #0d1329 0%,
-        #1b2140 60%,
-        #1f2a55 100%
-    );
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    background:#0d1329;
+    color:white;
 }
+
+/* Top bar (UNM style) */
+.header{
+    background:#BA0C2F;
+    padding:18px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.header img{
+    height:50px;
+}
+
+.header-title{
+    font-size:20px;
+    font-weight:600;
+}
+
+/* Main content */
 .container{
     text-align:center;
-}
-
-.logos{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:90px;
-    margin-bottom:40px;
-}
-
-.logos img{
-    height:120px;
-    width:auto;
-    opacity:0.95;
+    padding-top:80px;
 }
 
 h1{
-    color:#f0f0f0;
-    margin-bottom:45px;
+    font-size:36px;
+    margin-bottom:60px;
 }
 
+/* App icons */
 .apps{
     display:flex;
-    gap:60px;
     justify-content:center;
+    gap:80px;
 }
 
 .app{
     text-decoration:none;
     color:white;
+    transition: transform .2s ease;
 }
 
-.card{
-    background:#1f2335;
-    padding:30px;
-    border-radius:18px;
-    transition: transform .15s ease, box-shadow .15s ease;
+.app:hover{
+    transform:scale(1.07);
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 8px 20px rgba(0,0,0,.35);
-}
-
-.card img{
-    width:160px;
-    height:160px;
+.app img{
+    width:220px;
 }
 
 .label{
-    margin-top:12px;
+    margin-top:14px;
     font-weight:600;
-    color:#e0e0e0;
 }
 
 </style>
@@ -88,28 +83,30 @@ h1{
 
 <body>
 
-<div class="container">
+<!-- Header -->
+<div class="header">
+    <div class="header-left">
+        <img src="./images/unm-ece.png">
+        <div class="header-title">Electrical & Computer Engineering</div>
+    </div>
 
-<div class="logos">
-<img src="./images/nrel.png" alt="NREL Logo">
-<img src="./images/unm-ece.png" alt="UNM ECE Logo">
+    <img src="./images/nrel.png">
 </div>
+
+<!-- Content -->
+<div class="container">
 
 <h1>PV Repowering Tools</h1>
 
 <div class="apps">
 
 <a class="app" href="./cost/">
-<div class="card">
 <img src="./icons/cost.svg">
-</div>
 <div class="label">Cost Model</div>
 </a>
 
 <a class="app" href="./warranty/">
-<div class="card">
 <img src="./icons/warranty.svg">
-</div>
 <div class="label">Warranty Model</div>
 </a>
 
